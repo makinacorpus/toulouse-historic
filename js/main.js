@@ -1,9 +1,9 @@
 // Add Base Layer
-var toulouse1680Url = 'http://{s}.livembtiles.makina-corpus.net/makina/toulouse1680/{z}/{x}/{y}.png';
-var toulouse1830Url = 'http://{s}.livembtiles.makina-corpus.net/makina/toulouse1830/{z}/{x}/{y}.png';
+var toulouse1680Url = 'http://tilestream.makina-corpus.net/v2/toulouse1680/{z}/{x}/{y}.png';
+var toulouse1830Url = 'http://tilestream.makina-corpus.net/v2/toulouse1830/{z}/{x}/{y}.png';
 var toulouse2013Url = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png';
-var toulouse1680 = L.tileLayer(toulouse1680Url, {minZoom: 15, maxZoom: 20, subDomains: 'abcdefgh'});
-var toulouse1830 = L.tileLayer(toulouse1830Url, {minZoom: 15, maxZoom: 20, subDomains: 'abcdefgh'});
+var toulouse1680 = L.tileLayer(toulouse1680Url, {minZoom: 15, maxZoom: 20});
+var toulouse1830 = L.tileLayer(toulouse1830Url, {minZoom: 15, maxZoom: 20});
 var subDomains = ['otile1','otile2','otile3','otile4'];
 var toulouse2013 = L.tileLayer(toulouse2013Url, {minZoom: 15, maxZoom: 20, 
             subdomains: ["otile1", "otile2", "otile3", "otile4"]})
