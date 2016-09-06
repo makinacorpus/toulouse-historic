@@ -1,12 +1,10 @@
 // Add Base Layer
 var toulouse1680Url = 'http://tilestream.makina-corpus.net/v2/toulouse1680/{z}/{x}/{y}.png';
 var toulouse1830Url = 'http://tilestream.makina-corpus.net/v2/toulouse1830/{z}/{x}/{y}.png';
-var toulouse2013Url = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png';
+var toulouse2013Url = 'http://tilestream.makina-corpus.net/v2/toulouse-desaturate/{z}/{x}/{y}.png';
 var toulouse1680 = L.tileLayer(toulouse1680Url, {minZoom: 15, maxZoom: 20});
 var toulouse1830 = L.tileLayer(toulouse1830Url, {minZoom: 15, maxZoom: 20});
-var subDomains = ['otile1','otile2','otile3','otile4'];
-var toulouse2013 = L.tileLayer(toulouse2013Url, {minZoom: 15, maxZoom: 20, 
-            subdomains: ["otile1", "otile2", "otile3", "otile4"]})
+var toulouse2013 = L.tileLayer(toulouse2013Url, {minZoom: 15, maxZoom: 20});
 
 var map = L.map('map', { zoomControl:false, attributionControl:false, maxBounds: [[43.5874,1.4179],[43.6156,1.4629]]});
 map.setView([43.6, 1.44], 16);
